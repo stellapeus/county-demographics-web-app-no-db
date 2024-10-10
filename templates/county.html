@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>State Facts</title>
+    </head>
+    <body>
+
+        <form action="/showFact">
+          <select name="county"> <!-- add onchange="this.form.submit()" to submit/update the form when an option is selected.  Usefull for then displaying county options. -->
+            {{ county_options }}
+          </select>
+          <br><br>
+          <input type="submit" value="Get a fun fact!">
+        </form>
+       <p>{{ Fact1 }} </p>
+	   <p>{{ Fact2 }} </p>
+    </body>
+</html>
